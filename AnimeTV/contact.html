@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <meta name="description" content="AnimeTV - это портал о аниме">
+    <meta name="keywords" content="аниме, аниме онлайн">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+        <div class="logo">
+            <div class="logo_text">
+                <h1><a href="index.html">AnimeTV</a></h1>
+            </div>
+        </div>
+
+        <nav>
+
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="anime.html">Аниме</a></li>
+                <li><a href="rating.html">Рейтинг аниме</a></li>
+                <li class="selected"><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="site_content">
+
+        <aside>
+
+            <div class="sitebar">
+                <h2>Поиск</h2>
+                <form method="post" action="#" id="search_form">
+                    <input type="search" name="search_field" placeholder="ваш запрос">
+                    <input type="submit" class="btn" value="найти">
+                </form>
+            </div>
+
+            <div class="sitebar">
+                <h2>Вход</h2>
+                <form action="#" method="post" id="login">
+
+                    <input type="text" name="login_field" placeholder="логин">
+                    <input type="password" name="password_field" placeholder="пароль">
+                    <input type="submit" class="btn" value="вход">
+                    <div class="lables_passreg_text">
+                        <span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+                    </div>
+
+                </form>
+            </div>
+            <div class="sitebar">
+                <h2>Новости</h2>
+                <span>31.02.2018</span>
+                <p>Мы запустили расширенный поиск</p>
+                <a href="#">читать</a>
+            </div>
+
+            <div class="sitebar">
+                <h2>Рейтинг аниме</h2>
+                <ul>
+                    <li><a href="shows/show.html">Клинок рассекающий демонов</a><span class="rating_sitebar">9.1</span></li>
+                    <li><a href="shows/show2.html">Семь смертных грехов</a><span class="rating_sitebar">9.0</span></li>
+                    <li><a href="shows/show3.html">Драгонболл</a><span class="rating_sitebar">8.5</span></li>
+                    <li><a href="shows/show4.html">Атака титанов</a><span class="rating_sitebar">9.5</span></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <section>
+
+            <h1>Контакты</h1>
+            <p>Отправьте ваш отзыв о портале AnimeTV</p>
+
+            <div class="send send_contact">
+                <form action="#" method="post" id="contact">
+                    <input type="text" name="review_name" placeholder="ваше имя">
+                    <input type="text" name="review_email" placeholder="ваш email">
+                    <textarea name="review_text"></textarea>
+                    <input class="btn" type="submit" value="отправить">
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="index.html">Главная</a>
+            <a href="anime.html">Аниме</a>
+            <a href="rating.html">Рейтинг аниме</a>
+            <a href="contact.html">Контакты</a>
+        </p>
+        <p>anime.ee</p>
+    </div>
+</main>
+</body>
+</html>
