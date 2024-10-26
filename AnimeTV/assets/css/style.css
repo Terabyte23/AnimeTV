@@ -27,7 +27,6 @@ input[type="text"],input[type="password"],input[type="search"]{
 
 input, textarea{
     outline: none;
-    border: none;
     border: solid 1px #f2f2f2;
 }
 
@@ -131,7 +130,7 @@ hr{
 }
 
 .site_content{
-    width: 1180px;
+    width: 1280px;
     overflow: hidden;
     margin: 20px auto 0 auto;
     background-color: rgba(255, 255, 255, 0.95);
@@ -146,7 +145,7 @@ aside{
 
 .sitebar{
     float: right;
-    width: 222px;
+    width: 250px;
     padding: 5%;
     margin: 0 0 16px 0;
     border: solid 1px #f2f2f2;
@@ -192,6 +191,7 @@ section{
     text-align: center;
     padding: 0 0 0 5px;
     float: left;
+
 }
 
 section a{
@@ -220,10 +220,12 @@ section a{
 .info_anime_page{
     margin-top: 2%;
     margin-bottom: 4%;
+
 }
 
 .info_anime_page .label{
-    font-size: 1.2em;
+    font-size: 1.4em;
+
 }
 
 .info_anime_page .value{
@@ -232,15 +234,24 @@ section a{
     margin-right: 3%;
 }
 
-.descriptions_anime{
-    margin-bottom: 15%;
+.description_anime {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.descriptions_anime img{
-    float: left;
-    margin-right: 2%;
+.description_anime img {
+    margin-right: 20px;
     border-radius: 5px;
     border: solid 5px #dad7d5;
+    width: 250px;
+    height: 350px;
+}
+
+.description_anime p {
+    flex: 1;
+    font-size: 1em;
+    padding-top: 60px;
 }
 
 .reviews{
@@ -318,7 +329,7 @@ section a{
     color: white;
     border-radius: 5px;
     float: right;
-    margin-top: 0;
+    margin-top: -20px;
     clear: both;
     font-size: 0.8em;
     font-family: 'Nunito', sans-serif;
@@ -380,6 +391,75 @@ td img{
     padding: 0 0 10px 0;
 }
 
-.contants{
+.send_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#contact input[type="text"],
+#contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#contact textarea {
+    width: 624px;
+    height: 200px;
+}
+
+.btn {
+    background-color: #5c4acc;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.btn:hover {
+    background-color: #4b38b3;
+}
+
+.send {
+    margin: 20px auto;
+}
+
+h1 {
+    display: block; /* Убедимся, что h1 отображается как блок */
+    margin-bottom: 10px; /* Добавляем отступ внизу для отделения заголовка от следующего текста */
+    font-size: 2em; /* Можешь подстроить размер текста по желанию */
+    width: 100%; /* Убедимся, что заголовок занимает всю строку */
+}
+
+h1 + p { /* Стиль для абзаца сразу после h1 */
+    display: block;
+    margin-top: 5px; /* Отступ сверху, чтобы не было слишком тесно */
+}
+
+
+@media (max-width: 768px) {
+    .send_contact input[type="text"],
+    .send_contact textarea {
+        width: 100%;
+    }
+}
+
+.anime_info_container {
+    display: block;
+    width: 100%;
+    clear: both; /* Принудительно размещает элементы на разных строках */
+    margin-bottom: 20px;
 }
